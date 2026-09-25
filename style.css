@@ -1,0 +1,42 @@
+.calculadora{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 1.5px;
+    background-color: rgb(31, 31, 31); /* Cinza escuro */
+    border: none;
+    color: white;
+    
+    /* Adiciona suavidade na transição de cores e efeitos */
+    transition: background-color 0.15s ease, filter 0.1s ease, transform 0.1s ease;
+}
+
+.botao:hover {
+    background-color: black; /* Fica totalmente preto ao passar o mouse */
+}
+
+.botao:active {
+    background-color: black;
+    filter: brightness(0.7);   /* Escurece visualmente o preto pura ilusão de ótica */
+    transform: scale(0.95);    /* Efeito físico de clique (afunda levemente) */
+}
+#resultado{
+    width: 209px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
